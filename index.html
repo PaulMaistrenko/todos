@@ -10,49 +10,28 @@
 <section class="todoapp">
   <header class="header">
     <h1>todos</h1>
-    <input class="new-todo" placeholder="What needs to be done?">
+    <input class="new-todo" placeholder="What needs to be done?" autofocus>
   </header>
-
   <section class="main">
-    <input
-      id="toggle-all"
-      type="checkbox"
-      class="toggle-all"
-    >
+    <input id="toggle-all" class="toggle-all" type="checkbox">
     <label for="toggle-all">Mark all as complete</label>
-
-    <ul class="todo-list">
-      <li class="completed">
-        <input
-          id="todo-1"
-          type="checkbox"
-          class="toggle" 
-          checked
-        >
-        <label for="todo-1">HTML</label>
-        <button class="destroy"></button>
+    <ul class="todo-list"></ul>
+  </section>
+  <footer class="footer">
+    <span class="todo-count"></span>
+    <ul class="filters">
+      <li>
+        <a href="#/" class="selected">All</a>
       </li>
-      <li class="completed">
-        <input
-          id="todo-2"
-          type="checkbox"
-          class="toggle" 
-          checked
-        >
-        <label for="todo-2">CSS</label>
-        <button class="destroy"></button>
+      <li>
+        <a href="#/active">Active</a>
       </li>
-      <li class="">
-        <input
-          id="todo-3"
-          type="checkbox"
-          class="toggle"
-        >
-        <label for="todo-3">Javascript</label>
-        <button class="destroy"></button>
+      <li>
+        <a href="#/completed">Completed</a>
       </li>
     </ul>
-  </section>
+    <button class="clear-completed">Clear completed</button>
+  </footer>
 </section>
 <footer class="info">
   <p>Double-click to edit a todo</p>
