@@ -13,7 +13,7 @@ const allToggler = root.querySelector('.toggle-all');
 const clearCompletedButton = root.querySelector('.clear-completed');
 const filter = root.querySelector('.filters');
 
-initTodos(currentTodos);
+initTodos();
 
 // Add exist todo data
 function initTodos() {
@@ -52,7 +52,6 @@ function updateInfo() {
   const hasTodos = completedTogglers.length > 0 || activeTogglers.length > 0;
   footer.hidden = !hasTodos;
   toggleAllContainer.hidden = !hasTodos;
-  console.log(currentTodos);
 }
 
 // Filter todo list
